@@ -1,0 +1,22 @@
+# Archivo de Constraints de Usuario para FPGA Nexys 3
+
+# Señal de reloj (CLK) - Conectado al pin E3
+NET "CLK" LOC = "E3" | IOSTANDARD = LVCMOS33;
+
+# Señal de reinicio (RESET) - Conectado al botón BTNU (pin T18)
+NET "RESET" LOC = "T18" | IOSTANDARD = LVCMOS33;
+
+# Salida de los segmentos del display de 7 segmentos
+NET "SEGMENTS[0]" LOC = "J17" | IOSTANDARD = LVCMOS33;
+NET "SEGMENTS[1]" LOC = "J18" | IOSTANDARD = LVCMOS33;
+NET "SEGMENTS[2]" LOC = "T9" | IOSTANDARD = LVCMOS33;
+NET "SEGMENTS[3]" LOC = "J14" | IOSTANDARD = LVCMOS33;
+NET "SEGMENTS[4]" LOC = "P14" | IOSTANDARD = LVCMOS33;
+NET "SEGMENTS[5]" LOC = "T14" | IOSTANDARD = LVCMOS33;
+NET "SEGMENTS[6]" LOC = "K2" | IOSTANDARD = LVCMOS33;
+
+# Control de dígitos (AN0, AN1, AN2, AN3)
+NET "DIGIT[0]" LOC = "J19" | IOSTANDARD = LVCMOS33;
+NET "DIGIT[1]" LOC = "T10" | IOSTANDARD = LVCMOS33;
+NET "DIGIT[2]" LOC = "T11" | IOSTANDARD = LVCMOS33;
+NET "DIGIT[3]" LOC = "L18" | IOSTANDARD = LVCMOS33;
