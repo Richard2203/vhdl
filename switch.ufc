@@ -1,0 +1,19 @@
+# Archivo de Constraints de Usuario para FPGA Nexys 3
+
+# Señal de reloj (CLK) - Conectado al pin E3
+NET "CLK" LOC = "E3" | IOSTANDARD = LVCMOS33;
+
+# Señal de reinicio (RESET) - Conectado al botón BTNU (pin T18)
+NET "RESET" LOC = "T18" | IOSTANDARD = LVCMOS33;
+
+# Interruptor A - Conectado al interruptor SW0
+NET "A" LOC = "V17" | IOSTANDARD = LVCMOS33;
+
+# Interruptor B - Conectado al interruptor SW1
+NET "B" LOC = "V16" | IOSTANDARD = LVCMOS33;
+
+# LED1 - Conectado al LED LD0
+NET "LED1" LOC = "U16" | IOSTANDARD = LVCMOS33;
+
+# LED2 - Conectado al LED LD1
+NET "LED2" LOC = "E19" | IOSTANDARD = LVCMOS33;
